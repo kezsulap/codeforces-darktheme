@@ -4,12 +4,10 @@
 // @description  dark theme for codeforces
 // @author       Gaurang Tandon
 // @match        https://codeforces.com/*
-// @match        http://codeforces.com/*
-// @match        https://calendar.google.com/calendar/embed*
-// @match        https://www.facebook.com/v2.8/plugins/like.php*
+// @match        https://warsaw.contest.codeforces.com/*
 // @resource     desertCSS  desert.css
 // @resource     monokaiEditorTheme https://raw.githubusercontent.com/ajaxorg/ace/master/lib/ace/theme/monokai.css
-// @resource     darkthemecss darktheme.css
+// @resource     darkthemecss https://raw.githubusercontent.com/kezsulap/codeforces-darktheme/master/darktheme.css
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // @run-at       document-start
@@ -156,3 +154,17 @@ div.logo-plus-button {
 		});
 	})();
 })();
+function fix_colors() {
+    var acceptedsubmissions = document.querySelectorAll('[acceptedsubmissionid]')
+    var len = acceptedsubmissions.length
+    for (var i = 0; i < len; ++i) {
+        var elem = acceptedsubmissions[i];
+        if (elem.style.backgroundColor == 'rgb(212, 237, 201)') {
+            elem.style.setProperty('background-color', 'rgb(53, 92, 36)', 'important')
+        }
+        else if (elem.style.backgroundColor == 'rgb(255, 227, 227)') {
+            elem.style.setProperty('background-color', 'rgb(89, 43, 43)', 'important')
+        }
+    }
+}
+if (document.URL.match(new RegExp('https://codeforces.com/contest/[0-9]*/(standings|room)'))) window.setInterval(fix_colors, 1000)

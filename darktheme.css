@@ -112,7 +112,7 @@ table tr.highlighted-row td,
 .highlight-blue,
 /* You have a new message*/
 .lang-chooser div[style^="background-color: #EAF4FF;"] {
-    background-color: #13203a !important;
+    background-color: #003000 !important;
 }
 
 .standings .cell-accepted,
@@ -493,6 +493,12 @@ a.user-cyan {
     color: #01bdb2 !important;
 }
 
+tr.user-orange td,
+span.user-orange,
+a.user-orange {
+    color: #daa520 !important;
+}
+
 tr.user-violet td,
 span.user-violet,
 a.user-violet {
@@ -503,6 +509,18 @@ tr.user-gray td,
 span.user-gray,
 a.user-gray {
     color: #8c8c8c !important;
+}
+
+.usertalks tr.unread td {
+    background-color: #63257a !important;
+}
+
+.problems tr.accepted-problem td.act {
+    background-color: darkgreen !important;
+}
+
+.problems tr.rejected-problem td.act {
+    background-color: darkred !important;
 }
 
 /* ins tag in compare window of submissions */
