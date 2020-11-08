@@ -523,6 +523,11 @@ a.user-gray {
     background-color: darkred !important;
 }
 
+.bell-details {
+	background-color: darkgreen !important;
+	color: white !important;
+}
+
 /* ins tag in compare window of submissions */
 /* for example, goto any submission and press Compare
 https://codeforces.com/contest/1352/submission/79514097 */
