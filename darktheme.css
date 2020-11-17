@@ -528,6 +528,10 @@ a.user-gray {
 	color: white !important;
 }
 
+div.alert-warning {
+	color: white !important;
+	background-color: #704601 !important;
+}
 /* ins tag in compare window of submissions */
 /* for example, goto any submission and press Compare
 https://codeforces.com/contest/1352/submission/79514097 */
