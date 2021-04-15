@@ -556,7 +556,7 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
 	color: #00dd00 !important;
 }
 .prettyprint .pun {
-	color: #999900 !important;
+	color: #aaaa22 !important;
 }
 .prettyprint .typ {
 	color: #bb33bb !important;
@@ -565,5 +565,5 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
 	color: #00aaaa !important;
 }
 .prettyprint .kwd {
-	color: #4444bb !important;
+	color: #1111bb !important;
 }
