@@ -546,3 +546,24 @@ div.diffHtmlTarget pre.prettyprint ins[style^="background:#80ff80"] .lit {
     /* tone down the red tokens in the green regions, to improve color contrast */
     background: #ff9d9d !important;
 }
+.prettyprint .pln {
+	color: white !important;
+}
+.prettyprint .com {
+	color: #a57b7e !important;
+}
+.prettyprint .str {
+	color: #00dd00 !important;
+}
+.prettyprint .pun {
+	color: #999900 !important;
+}
+.prettyprint .typ {
+	color: #bb33bb !important;
+}
+.prettyprint .lit {
+	color: #00aaaa !important;
+}
+.prettyprint .kwd {
+	color: #4444bb !important;
+}
